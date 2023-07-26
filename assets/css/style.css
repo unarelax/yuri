@@ -1,6 +1,8 @@
 .bg {
   background-color: #f3f3f3;
   padding-top: 60px;
+  display: flex;
+  width: 100%;
 }
 .avatar-box {
   background: #fff;
@@ -119,24 +121,13 @@ h1 {
   position: absolute;
   top: 0;
   width: 40px; /* 设置图标的宽度，可根据需要调整 */
-  height: 40px; /* 设置图标的高度，可根据需要调整 */
-  background-color: #ff0000; /* 设置图标的背景颜色 */
-  /* 添加你的图标样式或背景图片等 */
-} */
 
-.left-icon {
-    display: flex;
-; /* 将左侧图标定位在容器左侧外侧 */
-}
 
-.right-icon {
-  right: -50px; /* 将右侧图标定位在容器右侧外侧 */
-}
 
-.icon-box{
+/* .icon-box{
     display: flex;
     gap: 30px;
-}
+} */
 
 @keyframes moveAnimation {
   0% {
@@ -148,9 +139,11 @@ h1 {
 }
 
 .left-icon {
+    width: 100px;
   animation: moveAnimation 5s linear infinite alternate; /* 设置动画效果 */
 }
 
 .right-icon {
+    width: 100px;
   animation: moveAnimation 5s linear infinite alternate-reverse; /* 设置动画效果 */
 }
