@@ -1,0 +1,156 @@
+.bg {
+  background-color: #f3f3f3;
+  padding-top: 60px;
+}
+.avatar-box {
+  background: #fff;
+  box-shadow: 4px 4px #ddd;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+.avatar {
+  height: 90%;
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.avatar-container::before {
+  content: "";
+  position: absolute;
+  width: 10px; /* 设置像素点的宽度 */
+  height: 10px; /* 设置像素点的高度 */
+  background-color: #e70512; /* 设置像素点的颜色 */
+  animation: rotateAnimation 5s infinite;
+}
+
+.container_style {
+  background-color: #fff;
+  margin-bottom: 40px;
+  height: 700px;
+}
+
+@keyframes rotateAnimation {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: 190px;
+  }
+  50% {
+    top: 190px;
+    left: 190px;
+  }
+  75% {
+    top: 190px;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+.icon_me {
+  width: 25px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+.me-txt {
+  font-size: 1.3rem;
+  line-height: 2;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.icon_la {
+  width: 80px;
+}
+
+.item{
+    font-weight: bold;
+    text-align: left;
+}
+
+.tag-content {
+  margin-top: 21px;
+}
+.tag {
+  background-color: #fff;
+  box-shadow: 2px 2px #ddd;
+  color: #222;
+  display: inline-block;
+  margin-bottom: 5px;
+  padding: 3px 5px;
+  text-decoration: none;
+}
+.tag:hover{
+    background: #000;
+    color: #fff;
+}
+.allBody{
+    max-width: 800px;
+}
+.iconImg{
+    width: 100px;
+}
+
+
+
+
+/* .left-icon,
+.right-icon {
+  position: absolute;
+  top: 0;
+  width: 40px; /* 设置图标的宽度，可根据需要调整 */
+  height: 40px; /* 设置图标的高度，可根据需要调整 */
+  background-color: #ff0000; /* 设置图标的背景颜色 */
+  /* 添加你的图标样式或背景图片等 */
+} */
+
+.left-icon {
+    display: flex;
+; /* 将左侧图标定位在容器左侧外侧 */
+}
+
+.right-icon {
+  right: -50px; /* 将右侧图标定位在容器右侧外侧 */
+}
+
+.icon-box{
+    display: flex;
+    gap: 30px;
+}
+
+@keyframes moveAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%); /* 设置图标在Y方向上的移动距离，可根据需要调整 */
+  }
+}
+
+.left-icon {
+  animation: moveAnimation 5s linear infinite alternate; /* 设置动画效果 */
+}
+
+.right-icon {
+  animation: moveAnimation 5s linear infinite alternate-reverse; /* 设置动画效果 */
+}
