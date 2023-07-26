@@ -3,6 +3,8 @@
   padding-top: 60px;
   display: flex;
   width: 100%;
+  justify-content: space-around;
+  min-height: 100vh;
 }
 .avatar-box {
   background: #fff;
@@ -140,10 +142,10 @@ h1 {
 
 .left-icon {
     width: 100px;
-  animation: moveAnimation 5s linear infinite alternate; /* 设置动画效果 */
+  animation: moveAnimation 3s linear infinite alternate; /* 设置动画效果 */
 }
 
 .right-icon {
     width: 100px;
-  animation: moveAnimation 5s linear infinite alternate-reverse; /* 设置动画效果 */
+  animation: moveAnimation 3s linear infinite alternate-reverse; /* 设置动画效果 */
 }
